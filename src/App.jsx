@@ -38,6 +38,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default function App() {
+ function App() {
   return <RouterProvider router={router} />;
 }
+
+export default App;

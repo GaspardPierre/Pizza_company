@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Header from './Header';
 import CartOverview from '../features/cart/CartOverview';
 import { Outlet, useNavigation } from 'react-router-dom';
@@ -12,13 +12,11 @@ export default function AppLayout() {
     <div className=' grid h-screen grid-row-[auto_1fr_auto]  '>
     {isLoading && <Loader />}
         <Header />
-        <div className='my-10 overflow-scroll'>
+        <div className='overflow-scroll'>
 
        
-        <main className='mx-auto max-w-3xl overflow-scroll '>
-            <h1>
-               
-            </h1>
+        <main className='mx-auto max-w-3xl '>
+          
             <Outlet />
         </main>
         </div>
