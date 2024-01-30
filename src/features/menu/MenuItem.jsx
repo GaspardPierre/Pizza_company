@@ -45,7 +45,8 @@ function handleAddToCart(){
               Sold out
             </p>
           )}
-          {isInCart &&  <div>
+          {isInCart &&  <div
+          className='flex items-center gap-3 sm:gap-8'>
             <UpdateItemQuantity
             pizzaId={id}
             currentQuantity={currentQuantity}/>
